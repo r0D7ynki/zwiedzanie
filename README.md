@@ -8,6 +8,7 @@ W środku znajdziesz plan nauki, listę źródeł i PDF do wydruku.
 | Miejsce | Temat | Czas | Pliki |
 |:--------|:------|-----:|:------|
 | [Malbork](malbork/) | Zamek krzyżacki i Polska w średniowieczu | 33 godziny | [PLAN.md](malbork/PLAN.md) · [PDF](malbork/Malbork_plan_nauki_i_zrodla.pdf) |
+| [Malbork — Trasy](malbork/) | Kompletne trasy zwiedzania miasta (listopad) | 1–2 dni | [TRASY_ZWIEDZANIA.md](malbork/TRASY_ZWIEDZANIA.md) · [PDF](malbork/Malbork_trasy_zwiedzania_listopad.pdf) |
 
 ## Jak czytać
 
@@ -23,9 +24,12 @@ zwiedzanie/
 └── malbork/
     ├── README.md                     # co jest w folderze i jak go przebudować
     ├── PLAN.md                       # plan nauki w Markdown
+    ├── TRASY_ZWIEDZANIA.md           # trasy zwiedzania w Markdown
     ├── Malbork_plan_nauki_i_zrodla.pdf
+    ├── Malbork_trasy_zwiedzania_listopad.pdf
     └── build/
-        ├── build.py                  # generuje PDF i HTML
+        ├── build.py                  # generuje plan nauki (PDF i HTML)
+        ├── build_trasy.py            # generuje trasy zwiedzania (PDF, MD i HTML)
         └── make_md.py                # generuje PLAN.md
 ```
 

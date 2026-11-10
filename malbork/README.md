@@ -9,8 +9,10 @@ z historią Polski w średniowieczu.
 | Plik | Do czego |
 |:-----|:---------|
 | [PLAN.md](PLAN.md) | Plan nauki: 8 etapów, kalendarium, źródła i pytania. Czytaj na ekranie. |
-| [Malbork_plan_nauki_i_zrodla.pdf](Malbork_plan_nauki_i_zrodla.pdf) | Ta sama treść do druku. 12 stron, A4. |
-| `build/` | Skrypty, które generują oba pliki. |
+| [Malbork_plan_nauki_i_zrodla.pdf](Malbork_plan_nauki_i_zrodla.pdf) | Plan nauki do druku. 12 stron, A4. |
+| [TRASY_ZWIEDZANIA.md](TRASY_ZWIEDZANIA.md) | Kompletne trasy zwiedzania całego Malborka w listopadzie (edycja studencka). |
+| [Malbork_trasy_zwiedzania_listopad.pdf](Malbork_trasy_zwiedzania_listopad.pdf) | Przewodnik terenowy z trasami i kosztorysem do druku/telefonu. 5 stron, A4. |
+| `build/` | Skrypty, które generują pliki. |
 
 ## Od czego zacząć
 
@@ -24,8 +26,9 @@ Potrzebujesz Pythona 3 i Chrome albo Chromium.
 
 ```bash
 cd build
-python3 build.py     # tworzy PDF i przewodnik.html
-python3 make_md.py   # tworzy PLAN.md
+python3 build.py        # tworzy plan nauki PDF i przewodnik.html
+python3 make_md.py      # tworzy PLAN.md
+python3 build_trasy.py  # tworzy trasy zwiedzania PDF, TRASY_ZWIEDZANIA.md i trasy.html
 ```
 
 Jeśli Chrome jest w nietypowym miejscu, ustaw zmienną `CHROME`:
